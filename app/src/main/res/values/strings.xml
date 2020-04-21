@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">DemoFishMarket</string>
+
+    <string name="EUC_KR">EUC-KR</string>
+    <!--Prefs Key-->
+    <string name="scale_name">SCALE_NAME</string>
+    <string name="scale_address">SCALE_ADDRESS</string>
+    <string name="printer_address">PRINTER_ADDRESS</string>
+
 </resources>

@@ -19,12 +19,10 @@ class DeviceListActivity : Activity() {
     private val mDeviceClickListener =
         AdapterView.OnItemClickListener { mAdapterView, mView, mPosition, mLong ->
             try {
-
-
                 mBluetoothAdapter!!.cancelDiscovery()
                 val mDeviceInfo = (mView as TextView).text.toString()
                 val mDeviceAddress = mDeviceInfo.substring(mDeviceInfo.length - 17)
-                Log.v(TAG, "Device_Address " + mDeviceAddress)
+                Log.v(TAG, "Device_Address $mDeviceAddress")
 
                 val mBundle = Bundle()
                 mBundle.putString("DeviceAddress", mDeviceAddress)
